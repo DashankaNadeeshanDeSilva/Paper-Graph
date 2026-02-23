@@ -1,6 +1,6 @@
 {
     "name": "papergraph",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "CLI tool that creates research-paper connectivity graphs from topics, keywords, or paper titles. Produces SQLite DB + self-contained HTML visualization.",
     "type": "module",
     "main": "dist/index.js",
