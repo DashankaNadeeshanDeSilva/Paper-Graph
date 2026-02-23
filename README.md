@@ -1,8 +1,29 @@
 # 📄 PaperGraph
 
+[![npm version](https://img.shields.io/npm/v/papergraph?color=cb3837&logo=npm&logoColor=white)](https://www.npmjs.com/package/papergraph)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 **Build interactive research-paper connectivity graphs from any topic.**
 
 PaperGraph is a command-line tool that discovers academic papers, traces their citation networks, computes text similarity, runs graph algorithms, and produces explorable visualizations — all from a single command.
+
+### 📦 Install
+
+```bash
+npm install -g papergraph
+```
+
+Then run:
+
+```bash
+papergraph build -t "transformer attention" -o graph.db
+papergraph view -i graph.db -o graph.html
+open graph.html
+```
+
+> **No API keys required** — works out of the box with [OpenAlex](https://openalex.org/) (free, open academic data).
 
 ---
 
@@ -208,19 +229,25 @@ Paper-Graph/
 
 ## 🚀 Quick Start
 
+### Global Install (recommended)
+
 ```bash
-# Install dependencies
-npm install
-
-# Build
-npm run build
-
-# Run
-npx papergraph build -t "transformer attention" -o graph.db
-npx papergraph view -i graph.db
+npm install -g papergraph
+papergraph build -t "neural speech enhancement" -d 2 -m 100 -o graph.db
+papergraph view -i graph.db -o graph.html
 ```
 
-See [USAGE.md](./USAGE.md) for detailed usage instructions.
+### From Source
+
+```bash
+git clone https://github.com/DashankaNadeeshanDeSilva/Paper-Graph.git
+cd Paper-Graph
+npm install
+npm run build
+node dist/index.js build -t "transformer attention" -o graph.db
+```
+
+See **[USAGE.md](./USAGE.md)** for full CLI reference, configuration options, and workflow examples.
 
 ---
 
