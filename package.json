@@ -1,0 +1,63 @@
+{
+    "name": "papergraph",
+    "version": "1.0.0",
+    "description": "CLI tool that creates research-paper connectivity graphs from topics, keywords, or paper titles. Produces SQLite DB + self-contained HTML visualization.",
+    "type": "module",
+    "main": "dist/index.js",
+    "bin": {
+        "papergraph": "dist/index.js"
+    },
+    "author": "Dashanka De Silva",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dashankadesilva/Paper-Graph.git"
+    },
+    "homepage": "https://github.com/dashankadesilva/Paper-Graph#readme",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "typecheck": "tsc --noEmit",
+        "prepublishOnly": "npm run build"
+    },
+    "files": [
+        "dist/index.js",
+        "README.md"
+    ],
+    "keywords": [
+        "research",
+        "papers",
+        "citation",
+        "graph",
+        "literature-review",
+        "openalex",
+        "semantic-scholar",
+        "sqlite",
+        "cli"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "better-sqlite3": "^11.7.0",
+        "commander": "^13.1.0",
+        "cosmiconfig": "^9.0.0",
+        "graphology": "^0.25.4",
+        "graphology-communities-louvain": "^2.0.1",
+        "graphology-metrics": "^2.2.0",
+        "graphology-operators": "^1.6.0",
+        "graphology-types": "^0.24.7",
+        "pino": "^9.6.0",
+        "pino-pretty": "^13.0.0",
+        "undici": "^7.3.0"
+    },
+    "devDependencies": {
+        "@types/better-sqlite3": "^7.6.12",
+        "@types/node": "^22.12.0",
+        "tsup": "^8.3.6",
+        "typescript": "^5.7.3",
+        "vitest": "^3.0.5"
+    }
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.cache/
+coverage/
+.env
+.env.local
+*.tgz
+*.html
+!src/**/*.html
+papergraph-cache/
