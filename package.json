@@ -10,9 +10,9 @@
     "author": "Dashanka De Silva",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dashankadesilva/Paper-Graph.git"
+        "url": "https://github.com/DashankaNadeeshanDeSilva/Paper-Graph.git"
     },
-    "homepage": "https://github.com/dashankadesilva/Paper-Graph#readme",
+    "homepage": "https://github.com/DashankaNadeeshanDeSilva/Paper-Graph#readme",
     "engines": {
         "node": ">=20"
     },
